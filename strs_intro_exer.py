@@ -4,9 +4,9 @@ quote = 'A quote from the Bible that I like: "If it is disagreeable in your sigh
 print(quote)
 
 first_name = 'tony'
-print(first_name) # prints string as listed originally
-print(first_name.title()) # prints string with first letter capital
-print(first_name.upper()) # prints string in all upper case
+print(first_name)  # prints string as listed originally
+print(first_name.title())  # prints string with first letter capital
+print(first_name.upper())  # prints string in all upper case
 
 # storing full name in separate variables to concatenate and print
 first_name = 'tony'
@@ -19,7 +19,9 @@ print(first_name.title() + ' ' + last_name.title() + ' is a pretty stand up guy.
 
 name = '   Tony  '
 
-print('-' + name + '-') # printing name as is
-print('-' + name.lstrip() + '-') # printing name with leading whitespace stripped
-print('-' + name.rstrip() + '-') # printing name with trailing whitespace stripped
-print('-' + name.strip() + '-') # printing name with all whitespace stripped
+print('-' + name + '-')  # printing name as is
+# printing name with leading whitespace stripped
+print('-' + name.lstrip() + '-')
+# printing name with trailing whitespace stripped
+print('-' + name.rstrip() + '-')
+print('-' + name.strip() + '-')  # printing name with all whitespace stripped
