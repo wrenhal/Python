@@ -120,3 +120,49 @@ tesla_model_s.number_of_wheels = 2  # setting number of wheels to 2
 print(tesla_model_s.number_of_wheels)  # 2
 tesla_model_s.make_noise()  # VRUUUUUUUM
 
+# Encapsulation: Hiding Information
+# Encapsulation is a mechanism that restricts direct access to
+# objects’ data and methods. But at the same time,
+# it facilitates operation on that data (objects’ methods).
+
+
+class Person:
+    #    def __init__(self, first_name):  These are declaring the public instance variable
+    #        self.first_name = first_name
+    # tk = Person('TK')here you would pass the first name as the argument to the public instance
+    # print(tk.first_name) # => TK
+    # first_name = 'TK'  # This initializes the value inside the class as an
+    # attribute
+    def __init__(self, first_name, email, age):
+        self.first_name = first_name  # first_name setup as a public instance variable
+        self._email = email  # _email is setup as non-public instance variable
+        self._age = age
+
+    def update_email(self, new_email):  # creating method to allow changing of non-public
+        self._email = new_email
+
+    def email(self):  # method to "Get" value of non-public
+        return self._email
+
+    def show_age(self):
+        return self._age
+
+
+# passing of values to public and non-public
+tk = Person('TK', 'tk@mail.com', 25)
+print(tk.email())  # => tk@mail.com # retrieving content of non-public variable
+# attempt to set new value that you would think to fail
+tk._email = 'new_tk@mail.com'
+print(tk.email())  # => Here you would think the system would not allow the value
+# change because of the non-public instance, but Python does not handle things that way
+# so because of this, the new set value takes hold.
+
+# using the update method to allow the change
+tk.update_email('new_tk@mail.com')
+# => new_tk@mail.com # proving that update method changed the value
+print(tk.email())
+# Here we are using normal instance to change the value to the first_name
+# variable
+tk.first_name = 'Kaio'
+print(tk.first_name)  # => Kaio
+print(tk.show_age())  # => 25
