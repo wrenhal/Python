@@ -20,12 +20,16 @@ print(name)
 # modulus gives remainder of division
 # floor division discards the remainder, basically rounding the answer down.
 
-print("5 + 2 = ", 5+2)
-print("5 - 2 = ", 5-2)
-print("5 * 2 = ", 5*2)
-print("5 / 2 = ", 5/2)
-print("5 % 2 = ", 5 % 2)
-print("5 ** 2 = ", 5**2)
-print("5 // 2 = ", 5//2)
+print('5 + 2 = ', 5 + 2)
+print('5 - 2 = ', 5 - 2)
+print('5 * 2 = ', 5 * 2)
+print('5 / 2 = ', 5 / 2)
+print('5 % 2 = ', 5 % 2)
+print('5 ** 2 = ', 5 ** 2)
+print('5 // 2 = ', 5 // 2)
 
+# Multiplication and Division will be performed before
+# Addition or Subtraction.  "Order Of Operations"
 
+print('1 + 2 - 3 * 2 =', 1 + 2 - 3 * 2)
+print('(1 + 2 - 3) * 2 =', (1 + 2 - 3) * 2)
