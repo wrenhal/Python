@@ -1,4 +1,4 @@
-print('Since this string is in quotes and tied to print function, python knows to "print" it on the screen')
+print('Since this string is in quotes and tied to the print function, python knows to "print" it on the screen')
 x = 9 # assigns 9 to x
 x = 15 # changes x to 15
 # None of the following lines change the value assigned to x
@@ -15,7 +15,7 @@ y = 'three'
 print(x+y)
 
 ln1 = 'I will start the line here... '
-ln2 = ' and finish the line here'
+ln2 = ' and finish the line here '
 ln3 = ln1+ln2
 
 print(ln3)
