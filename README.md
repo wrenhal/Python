@@ -5,5 +5,6 @@ Resources I'm currently going through:
 3. [TK's Learning Python: From Zero to Hero](https://medium.freecodecamp.org/learning-python-from-zero-to-hero-120ea540b567)
 4. [Derek Banas Python Programming](https://www.youtube.com/watch?v=N4mEzFDjqtA)
 5. [CupOfCode 01 Python 101](https://www.youtube.com/playlist?list=PLQh6rb1mrE_Zhh0xv3z-u_lLbZDVwc3uT)
+6. [Using Python](http://usingpython.com)
 
 I'll update this as I go through more resources.
